@@ -1,5 +1,6 @@
 backend:
-  name: github
+  # name: github
+  name: gitlab
   repo: xldrkp/testsite # Path to your Github repository
   branch: master # Branch to update (master by default)
 
@@ -20,3 +21,5 @@ collections: # A list of collections the CMS should be able to edit
     label: "Inhalt"
     folder: "summary"
     create: true
+    fields: # The fields each document in this collection have
+      - {label: "Haupttext", name: "body", widget: "markdown"}
