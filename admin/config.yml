@@ -16,3 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Haupttext", name: "body", widget: "markdown"}
       - {label: "Veröffentlichungsdatum", name: "date", widget: "datetime"}
       - {label: "Folgeartikel", name: "following", widget: "string"}
+  - name: "summary"
+    label: "Inhalt"
+    folder: "summary"
+    create: true
